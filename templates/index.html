@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Suicide Prediction Model</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Suicide Prediction Model</h1>
+        <p>This model predicts if a given text is suicidal or non-suicidal and provides a reason for the classification.</p>
+        <textarea id="user-input" placeholder="Enter the text to analyze"></textarea>
+        <button id="predict-button">Predict</button>
+        <div id="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
